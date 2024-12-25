@@ -1,0 +1,143 @@
+/*
+============================
+Theme Name: Just Abroad
+Theme URI: https://consultia.fleexstudio.com
+Author: VikingLab
+Author URI: https://themeforest.net/user/vikinglab/portfolio
+Description: Visafast - Visa consulting Template
+Version: 1.0.0
+License: GNU General Public License v1 or later
+License URI: LICENSE
+Text Domain: eduker
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+============================
+*/
+
+/*
+============================
+Name:  Visafast Consulting Theme
+Version: 1.0.0
+Description:
+Author: Noyon Ahemd
+Author URI:
+Location:
+============================
+*/
+
+.site-logo img {
+    width: 70%;
+}
+
+.theme-btn18{
+    background-color: #9F0B0F;
+}
+.main-menu-ex.main-menu-ex9 li a:hover {
+    color: #9F0B0F;
+} 
+.main-menu-ex.main-menu-ex9 li li a::after,
+.main-menu-ex.main-menu-ex9 li li a:hover::after {
+    background-color: #9F0B0F;
+}
+
+.hero-area2, .service9, .testimonial9 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(144, 6, 9, 0.2) 100%);
+}
+.about9-after-pera::after {
+    background: #900609;
+}
+.about9-after-pera {
+    background-color: #9006090d;
+}
+.countries8-box-hadding.countries9-box-hadding {
+    background: rgba(144, 6, 9, 0.8);
+}
+.countries8-box-hadding {
+    opacity: 1;
+    transform: none;
+}
+.choose2-text-box3.choose2-text-box9,
+.choose2-text-box4.choose2-text-box9 {
+    background-color: rgb(144 6 9 / 10%);
+}
+
+.choose2-icon-box3.choose2-icon-box9,
+.choose2-icon-box4.choose2-icon-box9,
+.choose2-icon-box3.choose2-icon-box9::after,
+.choose2-icon-box4.choose2-icon-box9::after,
+.choose2-box3:hover .choose2-text-box3.choose2-text-box9,
+.choose2-box4:hover .choose2-text-box4.choose2-text-box9,
+.choose2-box3:hover .choose2-icon-box3.choose2-icon-box9::after,
+.choose2-box4:hover .choose2-icon-box4.choose2-icon-box9::after {
+    background: #900609;
+}
+
+.choose2-box3:hover .choose2-icon-box3 img,
+.choose2-box4:hover .choose2-icon-box4 img {
+    filter: invert(1) brightness(0);
+}
+
+.team4-icons.team4-icons9 li a:hover {
+    background: #900609;
+}
+
+.hadding9 h4 a:hover {
+    color: #900609;
+}
+.theme-btn19 {
+    background: #900609;
+    border: 1px solid #ffffff;
+}
+.theme-btn19:hover {
+    color: #000000 !important;
+}
+.theme-btn19:after {
+    background: #ffffff;
+}
+.theme-btn19:hover:after {
+    background-color: #ffffff;
+}
+.single-footer.single-footer9 ul li a:hover,
+.single-footer.single-footer9 ul li a:hover span {
+    color: #900609;
+}
+.countries8-box-hadding {
+    margin: 0;
+    bottom: 0;
+}
+.countries8-box-hadding {
+    position: static;
+}
+.icon-wrapper img {
+    width: 50%;
+}
+.countries8-box-hadding.countries9-box-hadding {
+    background: #ffffff;
+    border: 2px solid #900609; 
+}
+.hadding8-w p {
+    color: #000000;
+}
+.countries8-box-hadding.countries9-box-hadding {
+    min-height: 250px;
+}
+
+@media only screen and (max-width: 769px) {
+    .mobile-sidebar {
+        background: #f5f5f5;
+    }
+    .mobile-nav li a, .mobile-menu-social h3, .mobile-menu-a a, .mobile-menu-social-icon ul li a, .menu-close {
+        color: #000000;
+    }  
+    .mobile-menu-icon img {
+        filter: invert(1);
+    }
+    .mobile-menu-social-icon ul li a {
+        border: 1px solid #000000;
+    }
+    .mobile-logo a img {
+        width: 55%;
+    }
+}
