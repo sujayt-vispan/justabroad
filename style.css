@@ -28,10 +28,23 @@ Location:
 */
 
 .site-logo img {
-    width: 70%;
+    width: 50%;
+}
+.header-area {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+.main-hadding7 h1 {
+    color: #FFF;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0;
 }
 
-.theme-btn18{
+.theme-btn18,
+.theme-btn15 {
     background-color: #9F0B0F;
 }
 .main-menu-ex.main-menu-ex9 li a:hover {
@@ -41,9 +54,21 @@ Location:
 .main-menu-ex.main-menu-ex9 li li a:hover::after {
     background-color: #9F0B0F;
 }
-
 .hero-area2, .service9, .testimonial9 {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(144, 6, 9, 0.2) 100%);
+}
+.video-play-button:before,
+.video-play-button:after,
+.video-play-btn9 .video-play-button:before,
+.video-play-btn9 .video-play-button:after {
+    background: #900609;
+}
+.theme-btn15::before,
+.theme-btn15::after {
+    background-color: #900609;
+}
+.hadding9 span.span {
+    background: #9006091c;
 }
 .about9-after-pera::after {
     background: #900609;
@@ -121,7 +146,13 @@ Location:
     color: #000000;
 }
 .countries8-box-hadding.countries9-box-hadding {
-    min-height: 250px;
+    min-height: 285px;
+}
+.service5-box:hover {
+    background-color: #900609;
+}
+.sp3 {
+    padding: 60px 0;
 }
 
 @media only screen and (max-width: 769px) {
