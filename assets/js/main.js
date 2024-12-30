@@ -162,7 +162,7 @@
           items: 1,
         },
         900: {
-          items: 2,
+          items: 3,
         },
       },
     });
@@ -185,7 +185,7 @@
               items: 1,
             },
             900: {
-              items: 2,
+              items: 3,
             },
           },
         });
@@ -772,5 +772,3 @@ let progress3 = $('#progress3').LineProgressbar({
         };
       });
     })();
-
-
