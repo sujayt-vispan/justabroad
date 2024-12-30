@@ -193,6 +193,14 @@ p.visa-study {
     line-height: 1.2rem;
     color: #555555 !important;
 }
+.testimonial9 .owl-nav button.owl-next:hover, 
+.testimonial9 .owl-carousel .owl-nav button.owl-prev:hover, 
+.testimonial9 .owl-carousel button.owl-dot {
+    background-color: #900609;
+}
+.testimonial1-box {
+    min-height: 410px;
+}
 
 @media only screen and (max-width: 1920px) {
     .countries8-box-hadding.countries9-box-hadding {
