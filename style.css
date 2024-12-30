@@ -157,6 +157,9 @@ Location:
 .sp3 {
     padding: 60px 0;
 }
+.contact-from-input input {
+    width: 99%;
+}
 
 @media only screen and (max-width: 769px) {
     .mobile-sidebar {
