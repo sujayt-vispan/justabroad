@@ -152,6 +152,7 @@
       margin: 10,
       nav: true,
       dots: false,
+    
       // autoplay: true,
       // autoplayTimeout: 6000,
       smartSpeed: 1500,
@@ -772,3 +773,65 @@ let progress3 = $('#progress3').LineProgressbar({
         };
       });
     })();
+
+
+const stateCityMapping = {
+  "26909": ["Port Blair"],
+  "26920": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore"],
+  "27573": ["Itanagar", "Tawang"],
+  "27718": ["Guwahati", "Dibrugarh", "Silchar"],
+  "28070": ["Patna", "Gaya", "Muzaffarpur"],
+  "28449": ["Chandigarh"],
+  "28455": ["Raipur", "Bilaspur", "Durg"],
+  "28644": ["Silvassa"],
+  "28650": ["Daman"],
+  "28655": ["Delhi"],
+  "28678": ["Panaji", "Margao"],
+  "28697": ["Ahmedabad", "Surat", "Vadodara", "Rajkot"],
+  "28972": ["Gurgaon", "Faridabad", "Panipat"],
+  "29297": ["Shimla", "Manali"],
+  "29424": ["Srinagar", "Jammu"],
+  "29647": ["Ranchi", "Jamshedpur"],
+  "29881": ["Bangalore", "Mysore"],
+  "30137": ["Thiruvananthapuram", "Kochi"],
+  "177104": ["Leh", "Kargil"],
+  "30279": ["Kavaratti"],
+  "30284": ["Bhopal", "Indore"],
+  "30624": ["Mumbai", "Pune", "Nagpur"],
+  "31026": ["Imphal"],
+  "31058": ["Shillong"],
+  "31123": ["Aizawl"],
+  "31172": ["Kohima"],
+  "31227": ["Bhubaneswar", "Cuttack"],
+  "31606": ["Pondicherry"],
+  "31626": ["Amritsar", "Ludhiana", "Jalandhar"],
+  "31766": ["Jaipur", "Jodhpur", "Udaipur"],
+  "32032": ["Gangtok"],
+  "32052": ["Chennai", "Coimbatore", "Madurai"],
+  "32319": ["Hyderabad", "Warangal"],
+  "32659": ["Agartala"],
+  "32784": ["Lucknow", "Kanpur", "Varanasi"],
+  "33411": ["Dehradun", "Nainital"],
+  "33506": ["Kolkata", "Darjeeling"]
+};
+    
+// Function to populate cities
+function GetChildByMachineKey(stateId, cityIdElementId) {
+  const cityDropdown = document.getElementById(cityIdElementId);
+  
+  // Clear previous city options
+  cityDropdown.innerHTML = '<option value="">Select City *</option>';
+  
+  // Get cities for the selected state
+  const cities = stateCityMapping[stateId];
+  
+  // If cities exist, populate the dropdown
+  if (cities) {
+    cities.forEach(city => {
+      const option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      cityDropdown.appendChild(option);
+    });
+  }
+}
