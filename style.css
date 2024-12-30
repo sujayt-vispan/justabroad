@@ -138,12 +138,25 @@ Location:
 .countries8-box-hadding {
     position: static;
 }
+.icon-wrapper {
+    padding-bottom: 12px;
+}
 .icon-wrapper img {
     width: 50%;
 }
 .countries8-box-hadding.countries9-box-hadding {
     background: #ffffff;
     border: 2px solid #900609; 
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+p.icon-wrapper {
+    padding-bottom: 24px;
+}
+p.icon-wrapper i {
+    font-size: 36px;
+    color: #900609;
 }
 .hadding8-w p {
     color: #000000;
@@ -159,6 +172,24 @@ Location:
 }
 .contact-from-input input {
     width: 99%;
+}
+
+@media only screen and (max-width: 1920px) {
+    .countries8-box-hadding.countries9-box-hadding {
+        min-height: 310px;
+    }
+    .content-wrapper h4 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .countries8-box-hadding.countries9-box-hadding {
+        min-height: 330px;
+    }
+    .content-wrapper h4 {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 769px) {
