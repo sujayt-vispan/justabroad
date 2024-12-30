@@ -205,6 +205,21 @@ p.visa-study {
     width: 64px;
     height: 64px;
 }
+.hero7-forrm-inputs .nice-select.wide {
+    margin-left: 0;
+}
+.nice-select.wide .list {
+    overflow: scroll;
+    max-height: 150px;
+}
+.contact-from-input input,
+.contact-from-input.contact-from-input2 input {
+    width: 100%;
+}
+.contact-from-input input,
+.contact-from-input textarea {
+    margin-left: 0;
+}
 
 @media only screen and (max-width: 1920px) {
     .countries8-box-hadding.countries9-box-hadding {
