@@ -329,44 +329,70 @@
             <form action="#">
               <div class="hero7-form">
                 <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                     <div class="hero7-forrm-inputs">
-                      <input type="text" placeholder="Your Name">
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="hero7-forrm-inputs">
-                      <input type="email" placeholder="Your Email">
+                      <input type="text" placeholder="Your Name" required>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="hero7-forrm-inputs">
-                      <input type="number" placeholder="Phone">
+                      <input type="email" placeholder="Your Email" required>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-12">
                     <div class="hero7-forrm-inputs">
-                      <select class="wide her07">
-                        <option value="">Country</option>
-                        <option value="">India</option>
-                        <option value="">Nepal</option>
-                        <option value="">Spain</option>
-                        <option value="">Brazil</option>
-                        <option value="">USA</option>
-                        <option value="">Saudi Arabia</option>
+                      <input type="number" placeholder="Phone" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="hero7-forrm-inputs">
+                      <select name="state_id" id="stateId" aria-label="State ID" class=" wide her07" onchange="GetChildByMachineKey(this.value,'cityId');" data-label="Select State *" data-none-selected-text="Select State">
+                        <option value="" selected>Select State *</option>
+                        <option value="26909">Andaman and Nicobar</option>
+                        <option value="26920">Andhra Pradesh</option>
+                        <option value="27573">Arunachal Pradesh</option>
+                        <option value="27718">Assam</option>
+                        <option value="28070">Bihar</option>
+                        <option value="28449">Chandigarh</option>
+                        <option value="28455">Chhattisgarh</option>
+                        <option value="28644">Dadra And Nagar Haveli</option>
+                        <option value="28650">Daman And Diu</option>
+                        <option value="28655">Delhi</option>
+                        <option value="28678">Goa</option>
+                        <option value="28697">Gujarat</option>
+                        <option value="28972">Haryana</option>
+                        <option value="29297">Himachal Pradesh</option>
+                        <option value="29424">Jammu and Kashmir</option>
+                        <option value="29647">Jharkhand</option>
+                        <option value="29881">Karnataka</option>
+                        <option value="30137">Kerala</option>
+                        <option value="177104">Ladakh</option>
+                        <option value="30279">Lakshadweep</option>
+                        <option value="30284">Madhya Pradesh</option>
+                        <option value="30624">Maharashtra</option>
+                        <option value="31026">Manipur</option>
+                        <option value="31058">Meghalaya</option>
+                        <option value="31123">Mizoram</option>
+                        <option value="31172">Nagaland</option>
+                        <option value="31227">Odisha</option>
+                        <option value="31606">Puducherry</option>
+                        <option value="31626">Punjab</option>
+                        <option value="31766">Rajasthan</option>
+                        <option value="32032">Sikkim</option>
+                        <option value="32052">Tamil Nadu</option>
+                        <option value="32319">Telangana</option>
+                        <option value="32659">Tripura</option>
+                        <option value="32784">Uttar Pradesh</option>
+                        <option value="33411">Uttarakhand</option>
+                        <option value="33506">West Bengal</option>
                       </select>
                     </div>
                   </div>
 
                   <div class="col-lg-12">
                     <div class="hero7-forrm-inputs">
-                      <select class="wide her07">
-                        <option value="">Selected Visa</option>
-                        <option value="">Tourist Visa</option>
-                        <option value="">Business Visa</option>
-                        <option value="">Student Visa</option>
-                        <option value="">Work Visa</option>
-                      </select>
+                      <select name="city_id" id="cityId" aria-label="City ID" class="wide her07" disabled="disabled" data-label="Select City *" data-none-selected-text="Select City">
+                        <option value="" selected="selected">Select City *</option></select>
                     </div>
                   </div>
 
@@ -1375,12 +1401,50 @@
                   <input type="text" placeholder="Your Email">
                 </div>
                 <div class="contact-from-input">
-                  <select class="wide">
-                    <option value="">Select Services</option>
-                    <option value="">Tourist Visa</option>
-                    <option value="">Work Visa</option>
-                    <option value="">Student Visa</option>
-                  </select>
+                  <div class="col-lg-12">
+                    <div class="hero7-forrm-inputs">
+                      <select name="state_id" id="stateId" aria-label="State ID" class=" wide her07" onchange="GetChildByMachineKey(this.value,'cityId');" data-label="Select State *" data-none-selected-text="Select State">
+                        <option value="" selected>Select State *</option>
+                        <option value="26909">Andaman and Nicobar</option>
+                        <option value="26920">Andhra Pradesh</option>
+                        <option value="27573">Arunachal Pradesh</option>
+                        <option value="27718">Assam</option>
+                        <option value="28070">Bihar</option>
+                        <option value="28449">Chandigarh</option>
+                        <option value="28455">Chhattisgarh</option>
+                        <option value="28644">Dadra And Nagar Haveli</option>
+                        <option value="28650">Daman And Diu</option>
+                        <option value="28655">Delhi</option>
+                        <option value="28678">Goa</option>
+                        <option value="28697">Gujarat</option>
+                        <option value="28972">Haryana</option>
+                        <option value="29297">Himachal Pradesh</option>
+                        <option value="29424">Jammu and Kashmir</option>
+                        <option value="29647">Jharkhand</option>
+                        <option value="29881">Karnataka</option>
+                        <option value="30137">Kerala</option>
+                        <option value="177104">Ladakh</option>
+                        <option value="30279">Lakshadweep</option>
+                        <option value="30284">Madhya Pradesh</option>
+                        <option value="30624">Maharashtra</option>
+                        <option value="31026">Manipur</option>
+                        <option value="31058">Meghalaya</option>
+                        <option value="31123">Mizoram</option>
+                        <option value="31172">Nagaland</option>
+                        <option value="31227">Odisha</option>
+                        <option value="31606">Puducherry</option>
+                        <option value="31626">Punjab</option>
+                        <option value="31766">Rajasthan</option>
+                        <option value="32032">Sikkim</option>
+                        <option value="32052">Tamil Nadu</option>
+                        <option value="32319">Telangana</option>
+                        <option value="32659">Tripura</option>
+                        <option value="32784">Uttar Pradesh</option>
+                        <option value="33411">Uttarakhand</option>
+                        <option value="33506">West Bengal</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
                 <div class="contact-from-input">
                   <textarea cols="30" rows="3" placeholder="Additional Details"></textarea>
