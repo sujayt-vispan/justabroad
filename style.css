@@ -34,6 +34,9 @@ Location:
     background-color: #ffffff;
     padding: 10px 0;
 }
+.hero-area7 {
+    min-height: 100vh;
+}
 .main-hadding7 h1 {
     color: #FFF;
     font-size: 45px;
@@ -153,9 +156,6 @@ Location:
 }
 .sp3 {
     padding: 60px 0;
-}
-.contact-from-input input {
-    width: 99%;
 }
 
 @media only screen and (max-width: 769px) {
