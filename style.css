@@ -30,6 +30,13 @@ Location:
 .site-logo img {
     width: 50%;
 }
+.progress-wrap::before,
+.progress-wrap::after {
+    color: #9F0B0F;
+}
+.progress-wrap svg.progress-circle path {
+    stroke: #9F0B0F;
+}
 .header-area {
     background-color: #ffffff;
     padding: 10px 0;
