@@ -201,6 +201,10 @@ p.visa-study {
 .testimonial1-box {
     min-height: 410px;
 }
+.testimonial1-img img {
+    width: 64px;
+    height: 64px;
+}
 
 @media only screen and (max-width: 1920px) {
     .countries8-box-hadding.countries9-box-hadding {
