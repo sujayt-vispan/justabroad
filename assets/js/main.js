@@ -465,23 +465,6 @@
     }
   });
 
-  // minus
-
-  // $(".minus").click(function () {
-  //   var $input = $(this).parent().find("input");
-  //   var count = parseInt($input.val()) - 1;
-  //   count = count < 1 ? 1 : count;
-  //   $input.val(count);
-  //   $input.change();
-  //   return false;
-  // });
-
-  // $(".plus").click(function () {
-  //   var $input = $(this).parent().find("input");
-  //   $input.val(parseInt($input.val()) + 1);
-  //   $input.change();
-  //   return false;
-  // });
 
       //minus
 
@@ -621,37 +604,6 @@
           }
       }));
   }
-  
-
-
-
-  // $(window).on('load', function() {
-  //   $('#visafast-preloader').addClass('loaded');
-  //   $("#loading").fadeOut(500);
-  //   // Una vez haya terminado el preloader aparezca el scroll
-
-  //   if ($('#consua-preloader').hasClass('loaded')) {
-  //     // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
-  //     $('#preloader').delay(900).queue(function() {
-  //       $(this).remove();
-  //     });
-  //   }
-  // });
-
-  
-
-
-
-
-  // preloader
-  // $(window).on("load", function (event) {
-  //   setTimeout(function () {
-  //     $("#preloader").fadeToggle();
-  //   }, 1500);
-  // });
-
-  // $("select").niceSelect();
-
 
 })(jQuery);
 
@@ -669,71 +621,6 @@ let progress2 = $('#progress2').LineProgressbar({
 let progress3 = $('#progress3').LineProgressbar({
   percentage: 92
 });
-
-// document.getElementById("animate").onclick = function () {
-//   tl.restart();
-// };
-
-// function animateFrom(elem, direction) {
-//   direction = direction || 1;
-//   var x = 0,
-//       y = direction * 100;
-//   if(elem.classList.contains("gs_reveal_fromLeft")) {
-//     x = -100;
-//     y = 0;
-//   } else if (elem.classList.contains("gs_reveal_fromRight")) {
-//     x = 100;
-//     y = 0;
-//   }else if (elem.classList.contains("gs_reveal_fromBottom")) {
-//     x = 0;
-//     y = -100;
-//   }
-  
-//   elem.style.transform = "translate(" + x + "px, " + y + "px)";
-//   elem.style.opacity = "0";
-//   gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-//     duration: 1.25, 
-//     x: 0,
-//     y: 0, 
-//     autoAlpha: 1, 
-//     ease: "expo", 
-//     overwrite: "auto"
-//   });
-// }
-
-// function hide(elem) {
-//   gsap.set(elem, {autoAlpha: 0});
-// }
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   gsap.registerPlugin(ScrollTrigger);
-  
-//   gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
-//     hide(elem); // assure that the element is hidden when scrolled into view
-    
-//     ScrollTrigger.create({
-//       trigger: elem,
-//       markers: false,
-//       onEnter: function() { animateFrom(elem) }, 
-//       onEnterBack: function() { animateFrom(elem, -1) },
-//       onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
-//     });
-//   });
-// });
-
-
-// gsap.registerPlugin (ScrollTrigger);
-
-// gsap.to(".square", {
-// x: 100,
-// duration: 3,
-// scrollTrigger: {
-// trigger: ".square", start: "top center",
-// markers: true,
-// }
-
-// })
-
 
     // Price filtering
      (function () {
@@ -774,64 +661,101 @@ let progress3 = $('#progress3').LineProgressbar({
       });
     })();
 
+ // State-to-City mapping
+ document.addEventListener("DOMContentLoaded", function () {
+  const stateCityMapping = {
+    "26909": ["Port Blair"],
+    "26920": [
+			'Adilabad',
+			'Anantapur',
+			'Chittoor',
+			'Kakinada',
+			'Guntur',
+			'Hyderabad',
+			'Karimnagar',
+			'Khammam',
+			'Krishna',
+			'Kurnool',
+			'Mahbubnagar',
+			'Medak',
+			'Nalgonda',
+			'Nizamabad',
+			'Ongole',
+			'Hyderabad',
+			'Srikakulam',
+			'Nellore',
+			'Visakhapatnam',
+			'Vizianagaram',
+			'Warangal',
+			'Eluru',
+			'Kadapa',
+		],
+    "27573": ["Itanagar", "Tawang"],
+    "27718": ["Guwahati", "Dibrugarh", "Silchar"],
+    "28070": ["Patna", "Gaya", "Muzaffarpur"],
+    "28449": ["Chandigarh"],
+    "28455": ["Raipur", "Bilaspur", "Durg"],
+    "28644": ["Silvassa"],
+    "28650": ["Daman"],
+    "28655": ["Delhi"],
+    "28678": ["Panaji", "Margao"],
+    "28697": ["Ahmedabad", "Surat", "Vadodara", "Rajkot"],
+    "28972": ["Gurgaon", "Faridabad", "Panipat"],
+    "29297": ["Shimla", "Manali"],
+    "29424": ["Srinagar", "Jammu"],
+    "29647": ["Ranchi", "Jamshedpur"],
+    "29881": ["Bangalore", "Mysore"],
+    "30137": ["Thiruvananthapuram", "Kochi"],
+    "177104": ["Leh", "Kargil"],
+    "30279": ["Kavaratti"],
+    "30284": ["Bhopal", "Indore"],
+    "30624": ["Mumbai", "Pune", "Nagpur"],
+    "31026": ["Imphal"],
+    "31058": ["Shillong"],
+    "31123": ["Aizawl"],
+    "31172": ["Kohima"],
+    "31227": ["Bhubaneswar", "Cuttack"],
+    "31606": ["Pondicherry"],
+    "31626": ["Amritsar", "Ludhiana", "Jalandhar"],
+    "31766": ["Jaipur", "Jodhpur", "Udaipur"],
+    "32032": ["Gangtok"],
+    "32052": ["Chennai", "Coimbatore", "Madurai"],
+    "32319": ["Hyderabad", "Warangal"],
+    "32659": ["Agartala"],
+    "32784": ["Lucknow", "Kanpur", "Varanasi"],
+    "33411": ["Dehradun", "Nainital"],
+    "33506": ["Kolkata", "Darjeeling"]
+  };
 
-const stateCityMapping = {
-  "26909": ["Port Blair"],
-  "26920": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore"],
-  "27573": ["Itanagar", "Tawang"],
-  "27718": ["Guwahati", "Dibrugarh", "Silchar"],
-  "28070": ["Patna", "Gaya", "Muzaffarpur"],
-  "28449": ["Chandigarh"],
-  "28455": ["Raipur", "Bilaspur", "Durg"],
-  "28644": ["Silvassa"],
-  "28650": ["Daman"],
-  "28655": ["Delhi"],
-  "28678": ["Panaji", "Margao"],
-  "28697": ["Ahmedabad", "Surat", "Vadodara", "Rajkot"],
-  "28972": ["Gurgaon", "Faridabad", "Panipat"],
-  "29297": ["Shimla", "Manali"],
-  "29424": ["Srinagar", "Jammu"],
-  "29647": ["Ranchi", "Jamshedpur"],
-  "29881": ["Bangalore", "Mysore"],
-  "30137": ["Thiruvananthapuram", "Kochi"],
-  "177104": ["Leh", "Kargil"],
-  "30279": ["Kavaratti"],
-  "30284": ["Bhopal", "Indore"],
-  "30624": ["Mumbai", "Pune", "Nagpur"],
-  "31026": ["Imphal"],
-  "31058": ["Shillong"],
-  "31123": ["Aizawl"],
-  "31172": ["Kohima"],
-  "31227": ["Bhubaneswar", "Cuttack"],
-  "31606": ["Pondicherry"],
-  "31626": ["Amritsar", "Ludhiana", "Jalandhar"],
-  "31766": ["Jaipur", "Jodhpur", "Udaipur"],
-  "32032": ["Gangtok"],
-  "32052": ["Chennai", "Coimbatore", "Madurai"],
-  "32319": ["Hyderabad", "Warangal"],
-  "32659": ["Agartala"],
-  "32784": ["Lucknow", "Kanpur", "Varanasi"],
-  "33411": ["Dehradun", "Nainital"],
-  "33506": ["Kolkata", "Darjeeling"]
-};
-    
-// Function to populate cities
-function GetChildByMachineKey(stateId, cityIdElementId) {
-  const cityDropdown = document.getElementById(cityIdElementId);
-  
-  // Clear previous city options
-  cityDropdown.innerHTML = '<option value="">Select City *</option>';
-  
-  // Get cities for the selected state
-  const cities = stateCityMapping[stateId];
-  
-  // If cities exist, populate the dropdown
-  if (cities) {
-    cities.forEach(city => {
-      const option = document.createElement("option");
-      option.value = city;
-      option.textContent = city;
-      cityDropdown.appendChild(option);
-    });
-  }
-}
+  window.GetChildByMachineKey = function (stateId, cityIdElementId) {
+    const cityDropdown = document.getElementById(cityIdElementId);
+
+    if (!cityDropdown) {
+      console.error(`City dropdown with ID '${cityIdElementId}' not found.`);
+      return;
+    }
+
+    // Clear previous city options
+    cityDropdown.innerHTML = '<option value="">Select City *</option>';
+
+    // Get cities for the selected state
+    const cities = stateCityMapping[stateId];
+
+    if (cities) {
+      cityDropdown.disabled = false; // Enable the city dropdown
+      cities.forEach(city => {
+        const option = document.createElement("option");
+        option.value = city;
+        option.textContent = city;
+        cityDropdown.appendChild(option);
+      });
+    } else {
+      cityDropdown.disabled = true; // Disable the city dropdown if no cities are found
+    }
+
+    // Trigger UI update for Nice Select
+    if ($(cityDropdown).hasClass("wide")) {
+      $(cityDropdown).niceSelect("update");
+    }
+  };
+});
