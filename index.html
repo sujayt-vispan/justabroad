@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=`device-width`, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!--=====TITLE=======-->
@@ -331,22 +331,25 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="hero7-forrm-inputs">
-                      <input type="text" placeholder="Your Name" required>
+                      <input type="text" placeholder="Your Name *" required>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="hero7-forrm-inputs">
-                      <input type="email" placeholder="Your Email" required>
+                      <input type="email" placeholder="Your Email *" required>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="hero7-forrm-inputs">
-                      <input type="number" placeholder="Phone" required>
+                      <input type="tel" minlength="10" maxlength="10" pattern="^\d{10}$" placeholder="Phone* (10-Digit)"
+                        required>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="hero7-forrm-inputs">
-                      <select name="state_id" id="stateId" aria-label="State ID" class=" wide her07" onchange="GetChildByMachineKey(this.value,'cityId');" data-label="Select State *" data-none-selected-text="Select State">
+                      <select name="state_id" id="stateId" aria-label="State ID" class="wide her07"
+                        onchange="GetChildByMachineKey(this.value, 'cityId');" data-label="Select State *"
+                        data-none-selected-text="Select State">
                         <option value="" selected>Select State *</option>
                         <option value="26909">Andaman and Nicobar</option>
                         <option value="26920">Andhra Pradesh</option>
@@ -385,14 +388,17 @@
                         <option value="32784">Uttar Pradesh</option>
                         <option value="33411">Uttarakhand</option>
                         <option value="33506">West Bengal</option>
+                        <!-- Other states -->
                       </select>
                     </div>
                   </div>
 
                   <div class="col-lg-12">
                     <div class="hero7-forrm-inputs">
-                      <select name="city_id" id="cityId" aria-label="City ID" class="wide her07" disabled="disabled" data-label="Select City *" data-none-selected-text="Select City">
-                        <option value="" selected="selected">Select City *</option></select>
+                      <select name="city_id" id="cityId" aria-label="City ID" class="wide her07"
+                        data-label="Select City *" data-none-selected-text="Select City" required disabled>
+                        <option value="" selected>Select City *</option>
+                      </select>
                     </div>
                   </div>
 
@@ -407,9 +413,6 @@
 
       </div>
     </div>
-    <img class="hero7-shape1 aniamtion-key-2" src="assets/img/shapes/hero7-shape1.svg" alt="">
-    <img class="hero7-shape2 aniamtion-key-2" src="assets/img/shapes/hero7-shape2.svg" alt="">
-    <img class="hero7-shape3 aniamtion-key-3" src="assets/img/shapes/hero7-shape3.svg" alt="">
   </div>
   <!--=====hero area end=======-->
 
@@ -529,7 +532,7 @@
               <div class="" data-aos="fade-up" data-aos-duration="700">
                 <div class="service5-box visa-type-box">
                   <div class="hadding5">
-                    <h4><a href="service.html">IELTS Overview</a></h4>
+                    <h4><a href="#">IELTS Overview</a></h4>
                     <div class="space16"></div>
                     <p>IELTS measures English proficiency, essential for studying, working, or emigrating to
                       English-speaking countries.</p>
@@ -542,7 +545,7 @@
               <div class="" data-aos="fade-up" data-aos-duration="1100">
                 <div class="service5-box visa-type-box">
                   <div class="hadding5">
-                    <h4><a href="service.html">Skill Evaluation</a></h4>
+                    <h4><a href="#">Skill Evaluation</a></h4>
                     <div class="space16"></div>
                     <p>IELTS assesses reading, writing, listening, and speaking skills. Scores range 1-9, widely
                       recognized globally.</p>
@@ -555,7 +558,7 @@
               <div class="">
                 <div class="service5-box visa-type-box">
                   <div class="hadding5">
-                    <h4><a href="service.html" data-aos="fade-up" data-aos-duration="1300">Global Partnership</a></h4>
+                    <h4><a href="#" data-aos="fade-up" data-aos-duration="1300">Global Partnership</a></h4>
                     <div class="space16"></div>
                     <p>IELTS, a joint venture by Cambridge, British Council, and IDP, assesses critical language
                       comprehension skills.</p>
@@ -698,8 +701,8 @@
       </div>
 
     </div>
-    <img class="service2-shape1 aniamtion-key-2" src="assets/img/shapes/choose9-shape2.svg" alt="">
-    <img class="service2-shape2 aniamtion-key-2" src="assets/img/shapes/choose9-shape1.svg" alt="">
+    <!-- <img class="service2-shape1 aniamtion-key-2" src="assets/img/shapes/choose9-shape2.svg" alt="">
+    <img class="service2-shape2 aniamtion-key-2" src="assets/img/shapes/choose9-shape1.svg" alt=""> -->
   </div>
 
   <!--=====choose end=======-->
@@ -763,9 +766,36 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                        <!-- <img src="assets/img/image/gre-logo.webp" alt=""> -->
-                        <svg width="64px" height="64px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#900609" stroke="#900609" stroke-width="1.44"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a{fill:none;stroke:#900609;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M9.3781,6.3746V39.18a1.8746,1.8746,0,0,0,1.8746,1.8746h2.1839V4.5H11.2527A1.8746,1.8746,0,0,0,9.3781,6.3746Z"></path><path class="a" d="M13.4366,4.5V41.0548H36.7473A1.8746,1.8746,0,0,0,38.6219,39.18V6.3746A1.8746,1.8746,0,0,0,36.7473,4.5Z"></path><path class="a" d="M18.4108,41.3649V43.5l-1.4132-.5929L15.3912,43.5h0V41.3649"></path><path class="a" d="M25.5332,41.3416v2.1352L24.12,42.8839l-1.6064.5929h0V41.3416"></path><rect class="a" x="17.3615" y="8.9009" width="15.9088" height="10.6585"></rect><line class="a" x1="17.3868" y1="11.7636" x2="33.2956" y2="11.7636"></line><line class="a" x1="17.3868" y1="16.726" x2="33.2956" y2="16.726"></line></g></svg>
-                      </div>
+                  <!-- <img src="assets/img/image/gre-logo.webp" alt=""> -->
+                  <svg width="64px" height="64px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#900609"
+                    stroke="#900609" stroke-width="1.44">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <defs>
+                        <style>
+                          .a {
+                            fill: none;
+                            stroke: #900609;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                          }
+                        </style>
+                      </defs>
+                      <path class="a"
+                        d="M9.3781,6.3746V39.18a1.8746,1.8746,0,0,0,1.8746,1.8746h2.1839V4.5H11.2527A1.8746,1.8746,0,0,0,9.3781,6.3746Z">
+                      </path>
+                      <path class="a"
+                        d="M13.4366,4.5V41.0548H36.7473A1.8746,1.8746,0,0,0,38.6219,39.18V6.3746A1.8746,1.8746,0,0,0,36.7473,4.5Z">
+                      </path>
+                      <path class="a" d="M18.4108,41.3649V43.5l-1.4132-.5929L15.3912,43.5h0V41.3649"></path>
+                      <path class="a" d="M25.5332,41.3416v2.1352L24.12,42.8839l-1.6064.5929h0V41.3416"></path>
+                      <rect class="a" x="17.3615" y="8.9009" width="15.9088" height="10.6585"></rect>
+                      <line class="a" x1="17.3868" y1="11.7636" x2="33.2956" y2="11.7636"></line>
+                      <line class="a" x1="17.3868" y1="16.726" x2="33.2956" y2="16.726"></line>
+                    </g>
+                  </svg>
+                </div>
                 <h4 class="font-f-3">Customized Learning</h4>
                 <div class="space16"></div>
                 <p class="font-f-3">Our courses are unique and designed to meet your needs so that you get the best
@@ -785,9 +815,74 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                        <svg fill="#900609" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.997 511.997" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="10.23994"> <g> <g> <path d="M456.026,263.284h-12.068l-0.004-163.922c0-23.114-18.805-41.919-41.919-41.919H257.599 c-9.513,0-17.909-5.721-21.387-14.577l-6.394-16.276C223.47,10.437,208.157,0,190.801,0h-80.84 C86.847,0,68.043,18.805,68.043,41.919v199.268c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47v-57.711 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.392,16.285 c6.353,16.142,21.667,26.572,39.012,26.572h144.438c12.651,0,22.944,10.272,22.984,22.914v22.434H55.971 c-5.231,0-9.47,4.24-9.47,9.47v180.565c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47V282.222h381.114v210.835H65.442 v-12.382c0-5.23-4.239-9.47-9.47-9.47c-5.231,0-9.47,4.24-9.47,9.47v21.852c0,5.23,4.239,9.47,9.47,9.47h400.055 c5.231,0,9.47-4.24,9.47-9.47V272.755C465.496,267.525,461.257,263.284,456.026,263.284z M425.014,135.111 c-6.605-4.346-14.502-6.884-22.984-6.884h-23.126c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h23.126 c12.651,0,22.944,10.267,22.984,22.9v35.814c-6.605-4.346-14.501-6.885-22.982-6.885H257.594c-9.508,0-17.904-5.719-21.385-14.56 l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849c-8.478,0-16.37,2.538-22.972,6.883v-35.751 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.391,16.282 c6.35,16.152,21.664,26.59,39.012,26.59h92.691c5.231,0,9.47-4.24,9.47-9.47c0-5.23-4.239-9.47-9.47-9.47h-92.691 c-9.509,0-17.904-5.723-21.385-14.574l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849 c-8.478,0-16.37,2.538-22.972,6.883V41.919c0-12.67,10.307-22.979,22.977-22.979h80.84c9.513,0,17.909,5.721,21.388,14.577 l6.394,16.276c6.345,16.154,21.66,26.591,39.015,26.591h144.438c12.67,0,22.979,10.309,22.979,22.979V135.111z"></path> </g> </g> <g> <g> <path d="M229.348,425.75l-12.811-29.44c-0.01-0.024-0.02-0.048-0.032-0.072l-23.212-53.337c-1.504-3.456-4.914-5.691-8.684-5.691 c-3.768,0-7.18,2.236-8.684,5.691l-23.208,53.33c-0.013,0.029-0.025,0.057-0.037,0.085l-12.81,29.435 c-2.087,4.796,0.109,10.376,4.904,12.463c1.229,0.537,2.512,0.789,3.773,0.789c3.655,0,7.137-2.129,8.689-5.693l10.388-23.87 h33.968l10.388,23.87c2.086,4.796,7.665,6.99,12.463,4.904C229.24,436.126,231.436,430.546,229.348,425.75z M175.867,390.499 l8.742-20.086l8.74,20.086H175.867z"></path> </g> </g> <g> <g> <path d="M367.134,402.066c-4.815-2.037-10.374,0.215-12.411,5.033c-3.331,7.874-11.007,12.963-19.555,12.963 c-11.701,0-21.221-9.519-21.221-21.221v-22.394c0-11.703,9.519-21.221,21.22-21.221c7.061,0,13.641,3.5,17.601,9.363 c2.926,4.334,8.816,5.473,13.148,2.546c4.335-2.928,5.474-8.815,2.547-13.148c-7.489-11.083-19.935-17.699-33.296-17.699 c-22.145,0-40.161,18.016-40.161,40.16v22.394c0,22.145,18.016,40.161,40.161,40.161c16.176,0,30.699-9.627,37-24.525 C374.203,409.66,371.949,404.104,367.134,402.066z"></path> </g> </g> <g> <g> <path d="M271.911,380.623h-25.254c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h25.254c5.231,0,9.47-4.24,9.47-9.47 C281.381,384.863,277.143,380.623,271.911,380.623z"></path> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M456.026,263.284h-12.068l-0.004-163.922c0-23.114-18.805-41.919-41.919-41.919H257.599 c-9.513,0-17.909-5.721-21.387-14.577l-6.394-16.276C223.47,10.437,208.157,0,190.801,0h-80.84 C86.847,0,68.043,18.805,68.043,41.919v199.268c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47v-57.711 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.392,16.285 c6.353,16.142,21.667,26.572,39.012,26.572h144.438c12.651,0,22.944,10.272,22.984,22.914v22.434H55.971 c-5.231,0-9.47,4.24-9.47,9.47v180.565c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47V282.222h381.114v210.835H65.442 v-12.382c0-5.23-4.239-9.47-9.47-9.47c-5.231,0-9.47,4.24-9.47,9.47v21.852c0,5.23,4.239,9.47,9.47,9.47h400.055 c5.231,0,9.47-4.24,9.47-9.47V272.755C465.496,267.525,461.257,263.284,456.026,263.284z M425.014,135.111 c-6.605-4.346-14.502-6.884-22.984-6.884h-23.126c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h23.126 c12.651,0,22.944,10.267,22.984,22.9v35.814c-6.605-4.346-14.501-6.885-22.982-6.885H257.594c-9.508,0-17.904-5.719-21.385-14.56 l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849c-8.478,0-16.37,2.538-22.972,6.883v-35.751 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.391,16.282 c6.35,16.152,21.664,26.59,39.012,26.59h92.691c5.231,0,9.47-4.24,9.47-9.47c0-5.23-4.239-9.47-9.47-9.47h-92.691 c-9.509,0-17.904-5.723-21.385-14.574l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849 c-8.478,0-16.37,2.538-22.972,6.883V41.919c0-12.67,10.307-22.979,22.977-22.979h80.84c9.513,0,17.909,5.721,21.388,14.577 l6.394,16.276c6.345,16.154,21.66,26.591,39.015,26.591h144.438c12.67,0,22.979,10.309,22.979,22.979V135.111z"></path> </g> </g> <g> <g> <path d="M229.348,425.75l-12.811-29.44c-0.01-0.024-0.02-0.048-0.032-0.072l-23.212-53.337c-1.504-3.456-4.914-5.691-8.684-5.691 c-3.768,0-7.18,2.236-8.684,5.691l-23.208,53.33c-0.013,0.029-0.025,0.057-0.037,0.085l-12.81,29.435 c-2.087,4.796,0.109,10.376,4.904,12.463c1.229,0.537,2.512,0.789,3.773,0.789c3.655,0,7.137-2.129,8.689-5.693l10.388-23.87 h33.968l10.388,23.87c2.086,4.796,7.665,6.99,12.463,4.904C229.24,436.126,231.436,430.546,229.348,425.75z M175.867,390.499 l8.742-20.086l8.74,20.086H175.867z"></path> </g> </g> <g> <g> <path d="M367.134,402.066c-4.815-2.037-10.374,0.215-12.411,5.033c-3.331,7.874-11.007,12.963-19.555,12.963 c-11.701,0-21.221-9.519-21.221-21.221v-22.394c0-11.703,9.519-21.221,21.22-21.221c7.061,0,13.641,3.5,17.601,9.363 c2.926,4.334,8.816,5.473,13.148,2.546c4.335-2.928,5.474-8.815,2.547-13.148c-7.489-11.083-19.935-17.699-33.296-17.699 c-22.145,0-40.161,18.016-40.161,40.16v22.394c0,22.145,18.016,40.161,40.161,40.161c16.176,0,30.699-9.627,37-24.525 C374.203,409.66,371.949,404.104,367.134,402.066z"></path> </g> </g> <g> <g> <path d="M271.911,380.623h-25.254c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h25.254c5.231,0,9.47-4.24,9.47-9.47 C281.381,384.863,277.143,380.623,271.911,380.623z"></path> </g> </g> </g></svg>
-                      </div>
-                
+                  <svg fill="#900609" height="64px" width="64px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 511.997 511.997" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                      stroke-width="10.23994">
+                      <g>
+                        <g>
+                          <path
+                            d="M456.026,263.284h-12.068l-0.004-163.922c0-23.114-18.805-41.919-41.919-41.919H257.599 c-9.513,0-17.909-5.721-21.387-14.577l-6.394-16.276C223.47,10.437,208.157,0,190.801,0h-80.84 C86.847,0,68.043,18.805,68.043,41.919v199.268c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47v-57.711 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.392,16.285 c6.353,16.142,21.667,26.572,39.012,26.572h144.438c12.651,0,22.944,10.272,22.984,22.914v22.434H55.971 c-5.231,0-9.47,4.24-9.47,9.47v180.565c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47V282.222h381.114v210.835H65.442 v-12.382c0-5.23-4.239-9.47-9.47-9.47c-5.231,0-9.47,4.24-9.47,9.47v21.852c0,5.23,4.239,9.47,9.47,9.47h400.055 c5.231,0,9.47-4.24,9.47-9.47V272.755C465.496,267.525,461.257,263.284,456.026,263.284z M425.014,135.111 c-6.605-4.346-14.502-6.884-22.984-6.884h-23.126c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h23.126 c12.651,0,22.944,10.267,22.984,22.9v35.814c-6.605-4.346-14.501-6.885-22.982-6.885H257.594c-9.508,0-17.904-5.719-21.385-14.56 l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849c-8.478,0-16.37,2.538-22.972,6.883v-35.751 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.391,16.282 c6.35,16.152,21.664,26.59,39.012,26.59h92.691c5.231,0,9.47-4.24,9.47-9.47c0-5.23-4.239-9.47-9.47-9.47h-92.691 c-9.509,0-17.904-5.723-21.385-14.574l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849 c-8.478,0-16.37,2.538-22.972,6.883V41.919c0-12.67,10.307-22.979,22.977-22.979h80.84c9.513,0,17.909,5.721,21.388,14.577 l6.394,16.276c6.345,16.154,21.66,26.591,39.015,26.591h144.438c12.67,0,22.979,10.309,22.979,22.979V135.111z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M229.348,425.75l-12.811-29.44c-0.01-0.024-0.02-0.048-0.032-0.072l-23.212-53.337c-1.504-3.456-4.914-5.691-8.684-5.691 c-3.768,0-7.18,2.236-8.684,5.691l-23.208,53.33c-0.013,0.029-0.025,0.057-0.037,0.085l-12.81,29.435 c-2.087,4.796,0.109,10.376,4.904,12.463c1.229,0.537,2.512,0.789,3.773,0.789c3.655,0,7.137-2.129,8.689-5.693l10.388-23.87 h33.968l10.388,23.87c2.086,4.796,7.665,6.99,12.463,4.904C229.24,436.126,231.436,430.546,229.348,425.75z M175.867,390.499 l8.742-20.086l8.74,20.086H175.867z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M367.134,402.066c-4.815-2.037-10.374,0.215-12.411,5.033c-3.331,7.874-11.007,12.963-19.555,12.963 c-11.701,0-21.221-9.519-21.221-21.221v-22.394c0-11.703,9.519-21.221,21.22-21.221c7.061,0,13.641,3.5,17.601,9.363 c2.926,4.334,8.816,5.473,13.148,2.546c4.335-2.928,5.474-8.815,2.547-13.148c-7.489-11.083-19.935-17.699-33.296-17.699 c-22.145,0-40.161,18.016-40.161,40.16v22.394c0,22.145,18.016,40.161,40.161,40.161c16.176,0,30.699-9.627,37-24.525 C374.203,409.66,371.949,404.104,367.134,402.066z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M271.911,380.623h-25.254c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h25.254c5.231,0,9.47-4.24,9.47-9.47 C281.381,384.863,277.143,380.623,271.911,380.623z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path
+                            d="M456.026,263.284h-12.068l-0.004-163.922c0-23.114-18.805-41.919-41.919-41.919H257.599 c-9.513,0-17.909-5.721-21.387-14.577l-6.394-16.276C223.47,10.437,208.157,0,190.801,0h-80.84 C86.847,0,68.043,18.805,68.043,41.919v199.268c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47v-57.711 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.392,16.285 c6.353,16.142,21.667,26.572,39.012,26.572h144.438c12.651,0,22.944,10.272,22.984,22.914v22.434H55.971 c-5.231,0-9.47,4.24-9.47,9.47v180.565c0,5.23,4.239,9.47,9.47,9.47c5.231,0,9.47-4.24,9.47-9.47V282.222h381.114v210.835H65.442 v-12.382c0-5.23-4.239-9.47-9.47-9.47c-5.231,0-9.47,4.24-9.47,9.47v21.852c0,5.23,4.239,9.47,9.47,9.47h400.055 c5.231,0,9.47-4.24,9.47-9.47V272.755C465.496,267.525,461.257,263.284,456.026,263.284z M425.014,135.111 c-6.605-4.346-14.502-6.884-22.984-6.884h-23.126c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h23.126 c12.651,0,22.944,10.267,22.984,22.9v35.814c-6.605-4.346-14.501-6.885-22.982-6.885H257.594c-9.508,0-17.904-5.719-21.385-14.56 l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849c-8.478,0-16.37,2.538-22.972,6.883v-35.751 c0-12.667,10.305-22.974,22.972-22.974h80.849c9.509,0,17.905,5.724,21.386,14.574l6.391,16.282 c6.35,16.152,21.664,26.59,39.012,26.59h92.691c5.231,0,9.47-4.24,9.47-9.47c0-5.23-4.239-9.47-9.47-9.47h-92.691 c-9.509,0-17.904-5.723-21.385-14.574l-6.391-16.282c-6.35-16.152-21.664-26.591-39.013-26.591h-80.849 c-8.478,0-16.37,2.538-22.972,6.883V41.919c0-12.67,10.307-22.979,22.977-22.979h80.84c9.513,0,17.909,5.721,21.388,14.577 l6.394,16.276c6.345,16.154,21.66,26.591,39.015,26.591h144.438c12.67,0,22.979,10.309,22.979,22.979V135.111z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M229.348,425.75l-12.811-29.44c-0.01-0.024-0.02-0.048-0.032-0.072l-23.212-53.337c-1.504-3.456-4.914-5.691-8.684-5.691 c-3.768,0-7.18,2.236-8.684,5.691l-23.208,53.33c-0.013,0.029-0.025,0.057-0.037,0.085l-12.81,29.435 c-2.087,4.796,0.109,10.376,4.904,12.463c1.229,0.537,2.512,0.789,3.773,0.789c3.655,0,7.137-2.129,8.689-5.693l10.388-23.87 h33.968l10.388,23.87c2.086,4.796,7.665,6.99,12.463,4.904C229.24,436.126,231.436,430.546,229.348,425.75z M175.867,390.499 l8.742-20.086l8.74,20.086H175.867z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M367.134,402.066c-4.815-2.037-10.374,0.215-12.411,5.033c-3.331,7.874-11.007,12.963-19.555,12.963 c-11.701,0-21.221-9.519-21.221-21.221v-22.394c0-11.703,9.519-21.221,21.22-21.221c7.061,0,13.641,3.5,17.601,9.363 c2.926,4.334,8.816,5.473,13.148,2.546c4.335-2.928,5.474-8.815,2.547-13.148c-7.489-11.083-19.935-17.699-33.296-17.699 c-22.145,0-40.161,18.016-40.161,40.16v22.394c0,22.145,18.016,40.161,40.161,40.161c16.176,0,30.699-9.627,37-24.525 C374.203,409.66,371.949,404.104,367.134,402.066z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M271.911,380.623h-25.254c-5.231,0-9.47,4.24-9.47,9.47c0,5.23,4.239,9.47,9.47,9.47h25.254c5.231,0,9.47-4.24,9.47-9.47 C281.381,384.863,277.143,380.623,271.911,380.623z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+
                 <h4 class="font-f-3">Comprehensive Coverage</h4>
                 <div class="space16"></div>
                 <p class="font-f-3">We also teach all four modules of the IELTS exam, which include Listening, Reading,
@@ -807,7 +902,56 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                  <svg fill="#900609" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" width="64px" height="64px" stroke="#900609" stroke-width="0.00512"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M0,0v512h402.002V0H0z M371.585,481.583H30.417V30.417h341.168V481.583z"></path> </g> </g> <g> <g> <path d="M474.744,41.496l-37.255,51.403v366.897H512V92.899L474.744,41.496z M467.906,102.763l6.838-9.435l6.839,9.435v275.917 h-13.677V102.763z M481.583,429.379h-13.677v-20.281h13.677V429.379z"></path> </g> </g> <g> <g> <rect x="138.145" y="78.557" width="125.704" height="30.417"></rect> </g> </g> <g> <g> <rect x="80.879" y="129.253" width="240.255" height="30.417"></rect> </g> </g> <g> <g> <rect x="80.879" y="179.958" width="240.255" height="30.417"></rect> </g> </g> <g> <g> <rect x="80.879" y="230.653" width="240.255" height="30.417"></rect> </g> </g> <g> <g> <rect x="80.879" y="352.332" width="240.255" height="30.417"></rect> </g> </g> <g> <g> <rect x="80.879" y="403.027" width="240.255" height="30.417"></rect> </g> </g> </g></svg>
+                  <svg fill="#900609" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve"
+                    width="64px" height="64px" stroke="#900609" stroke-width="0.00512">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path d="M0,0v512h402.002V0H0z M371.585,481.583H30.417V30.417h341.168V481.583z"></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M474.744,41.496l-37.255,51.403v366.897H512V92.899L474.744,41.496z M467.906,102.763l6.838-9.435l6.839,9.435v275.917 h-13.677V102.763z M481.583,429.379h-13.677v-20.281h13.677V429.379z">
+                          </path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="138.145" y="78.557" width="125.704" height="30.417"></rect>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="80.879" y="129.253" width="240.255" height="30.417"></rect>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="80.879" y="179.958" width="240.255" height="30.417"></rect>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="80.879" y="230.653" width="240.255" height="30.417"></rect>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="80.879" y="352.332" width="240.255" height="30.417"></rect>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="80.879" y="403.027" width="240.255" height="30.417"></rect>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
                 <h4 class="font-f-3">Mock Tests and Feedback</h4>
                 <div class="space16"></div>
@@ -828,7 +972,30 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                  <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="64px" height="64px" fill="#900609"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#900609;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <line class="st0" x1="23" y1="24" x2="23" y2="29"></line> <path class="st0" d="M10,21V10c0-1.7-1.3-3-3-3H1v11h6C8.7,18,10,19.3,10,21L10,21"></path> <path class="st0" d="M10,21V10c0-1.7,1.3-3,3-3h6v11h-6C11.3,18,10,19.3,10,21L10,21"></path> <path class="st0" d="M12.2,18.1c0.3,0.3,0.5,0.6,0.8,0.9v8"></path> <path class="st0" d="M22,24h4c1.1,0,2-0.9,2-2v-4h3l-3-6c0-5-4-9-9-9c-3.4,0-6.4,1.9-7.9,4.7"></path> </g></svg>
+                  <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="64px"
+                    height="64px" fill="#900609">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <style type="text/css">
+                        .st0 {
+                          fill: none;
+                          stroke: #900609;
+                          stroke-width: 2;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-miterlimit: 10;
+                        }
+                      </style>
+                      <line class="st0" x1="23" y1="24" x2="23" y2="29"></line>
+                      <path class="st0" d="M10,21V10c0-1.7-1.3-3-3-3H1v11h6C8.7,18,10,19.3,10,21L10,21"></path>
+                      <path class="st0" d="M10,21V10c0-1.7,1.3-3,3-3h6v11h-6C11.3,18,10,19.3,10,21L10,21"></path>
+                      <path class="st0" d="M12.2,18.1c0.3,0.3,0.5,0.6,0.8,0.9v8"></path>
+                      <path class="st0" d="M22,24h4c1.1,0,2-0.9,2-2v-4h3l-3-6c0-5-4-9-9-9c-3.4,0-6.4,1.9-7.9,4.7">
+                      </path>
+                    </g>
+                  </svg>
                 </div>
                 <h4 class="font-f-3">Flexible Learning Options</a></h4>
                 <div class="space16"></div>
@@ -849,7 +1016,16 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                  <svg fill="#900609" width="64px" height="64px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1801.441 0v1920H219.03v-439.216h-56.514c-31.196 0-56.515-25.299-56.515-56.47 0-31.172 25.319-56.47 56.515-56.47h56.514V1029.02h-56.514c-31.196 0-56.515-25.3-56.515-56.471 0-31.172 25.319-56.47 56.515-56.47h56.514V577.254h-56.514c-31.196 0-56.515-25.299-56.515-56.47 0-31.172 25.319-56.471 56.515-56.471h56.514V0h1582.412Zm-113.03 112.941H332.06v351.373h56.515c31.196 0 56.514 25.299 56.514 56.47 0 31.172-25.318 56.47-56.514 56.47H332.06v338.824h56.515c31.196 0 56.514 25.3 56.514 56.471 0 31.172-25.318 56.47-56.514 56.47H332.06v338.824h56.515c31.196 0 56.514 25.299 56.514 56.47 0 31.172-25.318 56.471-56.514 56.471H332.06v326.275h1356.353V112.94ZM640.289 425.201H1388.9v112.94H640.288v-112.94Zm0 214.83h639.439v112.94h-639.44v-112.94Zm0 534.845H1388.9v112.94H640.288v-112.94Zm0 214.83h639.439v112.94h-639.44v-112.94Z" fill-rule="evenodd"></path> </g></svg>
+                  <svg fill="#900609" width="64px" height="64px" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M1801.441 0v1920H219.03v-439.216h-56.514c-31.196 0-56.515-25.299-56.515-56.47 0-31.172 25.319-56.47 56.515-56.47h56.514V1029.02h-56.514c-31.196 0-56.515-25.3-56.515-56.471 0-31.172 25.319-56.47 56.515-56.47h56.514V577.254h-56.514c-31.196 0-56.515-25.299-56.515-56.47 0-31.172 25.319-56.471 56.515-56.471h56.514V0h1582.412Zm-113.03 112.941H332.06v351.373h56.515c31.196 0 56.514 25.299 56.514 56.47 0 31.172-25.318 56.47-56.514 56.47H332.06v338.824h56.515c31.196 0 56.514 25.3 56.514 56.471 0 31.172-25.318 56.47-56.514 56.47H332.06v338.824h56.515c31.196 0 56.514 25.299 56.514 56.47 0 31.172-25.318 56.471-56.514 56.471H332.06v326.275h1356.353V112.94ZM640.289 425.201H1388.9v112.94H640.288v-112.94Zm0 214.83h639.439v112.94h-639.44v-112.94Zm0 534.845H1388.9v112.94H640.288v-112.94Zm0 214.83h639.439v112.94h-639.44v-112.94Z"
+                        fill-rule="evenodd"></path>
+                    </g>
+                  </svg>
                 </div>
                 <h4 class="font-f-3">Up-to-date Syllabus</a></h4>
                 <div class="space16"></div>
@@ -870,7 +1046,19 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                  <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path d="M12 6.90909C10.8999 5.50893 9.20406 4.10877 5.00119 4.00602C4.72513 3.99928 4.5 4.22351 4.5 4.49965C4.5 6.54813 4.5 14.3034 4.5 16.597C4.5 16.8731 4.72515 17.09 5.00114 17.099C9.20405 17.2364 10.8999 19.0998 12 20.5M12 6.90909C13.1001 5.50893 14.7959 4.10877 18.9988 4.00602C19.2749 3.99928 19.5 4.21847 19.5 4.49461C19.5 6.78447 19.5 14.3064 19.5 16.5963C19.5 16.8724 19.2749 17.09 18.9989 17.099C14.796 17.2364 13.1001 19.0998 12 20.5M12 6.90909L12 20.5" stroke="#900609" stroke-linejoin="round"></path> <path d="M19.2353 6H21.5C21.7761 6 22 6.22386 22 6.5V19.539C22 19.9436 21.5233 20.2124 21.1535 20.0481C20.3584 19.6948 19.0315 19.2632 17.2941 19.2632C14.3529 19.2632 12 21 12 21C12 21 9.64706 19.2632 6.70588 19.2632C4.96845 19.2632 3.64156 19.6948 2.84647 20.0481C2.47668 20.2124 2 19.9436 2 19.539V6.5C2 6.22386 2.22386 6 2.5 6H4.76471" stroke="#900609" stroke-linejoin="round"></path> </g></svg>
+                  <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <rect width="24" height="24" fill="white"></rect>
+                      <path
+                        d="M12 6.90909C10.8999 5.50893 9.20406 4.10877 5.00119 4.00602C4.72513 3.99928 4.5 4.22351 4.5 4.49965C4.5 6.54813 4.5 14.3034 4.5 16.597C4.5 16.8731 4.72515 17.09 5.00114 17.099C9.20405 17.2364 10.8999 19.0998 12 20.5M12 6.90909C13.1001 5.50893 14.7959 4.10877 18.9988 4.00602C19.2749 3.99928 19.5 4.21847 19.5 4.49461C19.5 6.78447 19.5 14.3064 19.5 16.5963C19.5 16.8724 19.2749 17.09 18.9989 17.099C14.796 17.2364 13.1001 19.0998 12 20.5M12 6.90909L12 20.5"
+                        stroke="#900609" stroke-linejoin="round"></path>
+                      <path
+                        d="M19.2353 6H21.5C21.7761 6 22 6.22386 22 6.5V19.539C22 19.9436 21.5233 20.2124 21.1535 20.0481C20.3584 19.6948 19.0315 19.2632 17.2941 19.2632C14.3529 19.2632 12 21 12 21C12 21 9.64706 19.2632 6.70588 19.2632C4.96845 19.2632 3.64156 19.6948 2.84647 20.0481C2.47668 20.2124 2 19.9436 2 19.539V6.5C2 6.22386 2.22386 6 2.5 6H4.76471"
+                        stroke="#900609" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
                 </div>
                 <h4 class="font-f-3">Best Study Materials</a></h4>
                 <div class="space16"></div>
@@ -892,7 +1080,71 @@
             <div class="hadding8-w countries8-box-hadding countries9-box-hadding">
               <div class="content-wrapper">
                 <div class="icon-wrapper">
-                  <svg width="64px" height="64px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="_x3C_Layer_x3E_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#900609"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.512"></g><g id="SVGRepo_iconCarrier"> <g id="help_x2C__message_x2C__question_x2C__question_mark"> <g id="XMLID_2695_"> <g id="XMLID_2696_"> <path d=" M21.5,18.5h-11c-1.66,0-3-1.34-3-3v-11c0-1.66,1.34-3,3-3h11c1.66,0,3,1.34,3,3v11C24.5,17.16,23.16,18.5,21.5,18.5z" fill="none" id="XMLID_2704_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path> <path d=" M26.5,5.521L26.5,5.521c1.657,0,3,1.343,3,3v15c0,1.657-1.343,3-3,3H23l-3.5,4v-4h-14c-1.657,0-3-1.343-3-3v-15 c0-1.657,1.343-3,3-3h0" fill="none" id="XMLID_2703_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path> <path d=" M16,13v-0.542c0-0.904,0.475-1.743,1.25-2.208l0,0c0.775-0.465,1.25-1.304,1.25-2.208V8c0-1.381-1.119-2.5-2.5-2.5l0,0 c-1.381,0-2.5,1.119-2.5,2.5l0,0" fill="none" id="XMLID_2702_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path> <line fill="#900609" id="XMLID_2700_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16" x2="16" y1="15" y2="14.867"></line> <line fill="none" id="XMLID_2699_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.6" x2="18.5" y1="22.5" y2="22.5"></line> <line fill="none" id="XMLID_2698_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.1" x2="16" y1="22.5" y2="22.5"></line> <line fill="none" id="XMLID_2697_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.6" x2="13.5" y1="22.5" y2="22.5"></line> </g> </g> <g id="XMLID_1026_"> <g id="XMLID_1052_"> <path d=" M21.5,18.5h-11c-1.66,0-3-1.34-3-3v-11c0-1.66,1.34-3,3-3h11c1.66,0,3,1.34,3,3v11C24.5,17.16,23.16,18.5,21.5,18.5z" fill="none" id="XMLID_2694_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path> <path d=" M26.5,5.521L26.5,5.521c1.657,0,3,1.343,3,3v15c0,1.657-1.343,3-3,3H23l-3.5,4v-4h-14c-1.657,0-3-1.343-3-3v-15 c0-1.657,1.343-3,3-3h0" fill="none" id="XMLID_2621_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path> <path d=" M16,13v-0.542c0-0.904,0.475-1.743,1.25-2.208l0,0c0.775-0.465,1.25-1.304,1.25-2.208V8c0-1.381-1.119-2.5-2.5-2.5l0,0 c-1.381,0-2.5,1.119-2.5,2.5l0,0" fill="none" id="XMLID_2559_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path> <line fill="none" id="XMLID_2558_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16" x2="16" y1="15" y2="14.867"></line> <line fill="none" id="XMLID_2557_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.6" x2="18.5" y1="22.5" y2="22.5"></line> <line fill="none" id="XMLID_2556_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.1" x2="16" y1="22.5" y2="22.5"></line> <line fill="none" id="XMLID_1073_" stroke="#900609" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.6" x2="13.5" y1="22.5" y2="22.5"></line> </g> </g> </g> </g></svg>
+                  <svg width="64px" height="64px" viewBox="0 0 32 32" enable-background="new 0 0 32 32"
+                    id="_x3C_Layer_x3E_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#900609">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                      stroke-width="0.512"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g id="help_x2C__message_x2C__question_x2C__question_mark">
+                        <g id="XMLID_2695_">
+                          <g id="XMLID_2696_">
+                            <path
+                              d=" M21.5,18.5h-11c-1.66,0-3-1.34-3-3v-11c0-1.66,1.34-3,3-3h11c1.66,0,3,1.34,3,3v11C24.5,17.16,23.16,18.5,21.5,18.5z"
+                              fill="none" id="XMLID_2704_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"></path>
+                            <path
+                              d=" M26.5,5.521L26.5,5.521c1.657,0,3,1.343,3,3v15c0,1.657-1.343,3-3,3H23l-3.5,4v-4h-14c-1.657,0-3-1.343-3-3v-15 c0-1.657,1.343-3,3-3h0"
+                              fill="none" id="XMLID_2703_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"></path>
+                            <path
+                              d=" M16,13v-0.542c0-0.904,0.475-1.743,1.25-2.208l0,0c0.775-0.465,1.25-1.304,1.25-2.208V8c0-1.381-1.119-2.5-2.5-2.5l0,0 c-1.381,0-2.5,1.119-2.5,2.5l0,0"
+                              fill="none" id="XMLID_2702_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"></path>
+                            <line fill="#900609" id="XMLID_2700_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="16" x2="16" y1="15" y2="14.867"></line>
+                            <line fill="none" id="XMLID_2699_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="18.6" x2="18.5" y1="22.5" y2="22.5">
+                            </line>
+                            <line fill="none" id="XMLID_2698_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="16.1" x2="16" y1="22.5" y2="22.5">
+                            </line>
+                            <line fill="none" id="XMLID_2697_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="13.6" x2="13.5" y1="22.5" y2="22.5">
+                            </line>
+                          </g>
+                        </g>
+                        <g id="XMLID_1026_">
+                          <g id="XMLID_1052_">
+                            <path
+                              d=" M21.5,18.5h-11c-1.66,0-3-1.34-3-3v-11c0-1.66,1.34-3,3-3h11c1.66,0,3,1.34,3,3v11C24.5,17.16,23.16,18.5,21.5,18.5z"
+                              fill="none" id="XMLID_2694_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"></path>
+                            <path
+                              d=" M26.5,5.521L26.5,5.521c1.657,0,3,1.343,3,3v15c0,1.657-1.343,3-3,3H23l-3.5,4v-4h-14c-1.657,0-3-1.343-3-3v-15 c0-1.657,1.343-3,3-3h0"
+                              fill="none" id="XMLID_2621_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"></path>
+                            <path
+                              d=" M16,13v-0.542c0-0.904,0.475-1.743,1.25-2.208l0,0c0.775-0.465,1.25-1.304,1.25-2.208V8c0-1.381-1.119-2.5-2.5-2.5l0,0 c-1.381,0-2.5,1.119-2.5,2.5l0,0"
+                              fill="none" id="XMLID_2559_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"></path>
+                            <line fill="none" id="XMLID_2558_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="16" x2="16" y1="15" y2="14.867"></line>
+                            <line fill="none" id="XMLID_2557_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="18.6" x2="18.5" y1="22.5" y2="22.5">
+                            </line>
+                            <line fill="none" id="XMLID_2556_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="16.1" x2="16" y1="22.5" y2="22.5">
+                            </line>
+                            <line fill="none" id="XMLID_1073_" stroke="#900609" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" x1="13.6" x2="13.5" y1="22.5" y2="22.5">
+                            </line>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
                 <h4 class="font-f-3">Study Abroad Support</a></h4>
                 <div class="space16"></div>
@@ -1241,7 +1493,10 @@
 
             <div class="space24"></div>
             <div class="hadding1">
-              <p class="font-f-3">"I can't thank Dillesh sir and Arohi ma'am enough for being an instrumental role in my journey to Harvard. Their expertise, combined with their dedication to student success, sets them apart. The tutoring sessions were highly interactive and focused on building a strong foundation in the core concepts."</p>
+              <p class="font-f-3">"I can't thank Dillesh sir and Arohi ma'am enough for being an instrumental role in my
+                journey to Harvard. Their expertise, combined with their dedication to student success, sets them apart.
+                The tutoring sessions were highly interactive and focused on building a strong foundation in the core
+                concepts."</p>
               <div class="space30"></div>
               <div class="testimonial1-bottom">
                 <div class="testimonial1-img img50">
@@ -1264,7 +1519,9 @@
 
             <div class="space24"></div>
             <div class="hadding1">
-              <p class="font-f-3">"Loved the quant tips and support from Dillesh Sir. Would highly recommend this to aspirants seeking to sharpen strategy and achieve a score leap in a short while. Helped me get to 740."</p>
+              <p class="font-f-3">"Loved the quant tips and support from Dillesh Sir. Would highly recommend this to
+                aspirants seeking to sharpen strategy and achieve a score leap in a short while. Helped me get to 740."
+              </p>
               <div class="space30"></div>
               <div class="testimonial1-bottom">
                 <div class="testimonial1-img img50">
@@ -1287,7 +1544,10 @@
 
             <div class="space24"></div>
             <div class="hadding1">
-              <p class="font-f-3">"Attending Just Abroad's SAT classes was a wise investment. The curriculum was well-structured, covering all the necessary topics and providing ample practice opportunities. Dillesh sir and Arohi ma'am were approachable and always willing to clarify doubts. Thanks to their guidance, I got into the college I always dreamed of attending."</p>
+              <p class="font-f-3">"Attending Just Abroad's SAT classes was a wise investment. The curriculum was
+                well-structured, covering all the necessary topics and providing ample practice opportunities. Dillesh
+                sir and Arohi ma'am were approachable and always willing to clarify doubts. Thanks to their guidance, I
+                got into the college I always dreamed of attending."</p>
               <div class="space30"></div>
               <div class="testimonial1-bottom">
                 <div class="testimonial1-img img50">
@@ -1310,7 +1570,11 @@
 
             <div class="space24"></div>
             <div class="hadding1">
-              <p class="font-f-3">"Mr. Dillesh has a very unique way of teaching which provided valuable insights and shortcuts. I particularly appreciated the emphasis on time management and stress reduction techniques. The small class size allowed for individual attention, and the interactive sessions made learning enjoyable. With Mr. Dillesh's help, I achieved a score beyond my expectations. I highly recommend these classes!"</p>
+              <p class="font-f-3">"Mr. Dillesh has a very unique way of teaching which provided valuable insights and
+                shortcuts. I particularly appreciated the emphasis on time management and stress reduction techniques.
+                The small class size allowed for individual attention, and the interactive sessions made learning
+                enjoyable. With Mr. Dillesh's help, I achieved a score beyond my expectations. I highly recommend these
+                classes!"</p>
               <div class="space30"></div>
               <div class="testimonial1-bottom">
                 <div class="testimonial1-img img50">
@@ -1333,7 +1597,11 @@
 
             <div class="space24"></div>
             <div class="hadding1">
-              <p class="font-f-3">"Outstanding GRE tutoring experience! The tutors demonstrated a deep understanding of the exam structure and content. They were patient and dedicated, going above and beyond to ensure that I grasped difficult concepts. The study resources provided were top-notch, and the regular practice sessions helped me build confidence in tackling the challenging sections of the. GRE. I highly recommend this tutoring service."</p>
+              <p class="font-f-3">"Outstanding GRE tutoring experience! The tutors demonstrated a deep understanding of
+                the exam structure and content. They were patient and dedicated, going above and beyond to ensure that I
+                grasped difficult concepts. The study resources provided were top-notch, and the regular practice
+                sessions helped me build confidence in tackling the challenging sections of the. GRE. I highly recommend
+                this tutoring service."</p>
               <div class="space30"></div>
               <div class="testimonial1-bottom">
                 <div class="testimonial1-img img50">
@@ -1356,7 +1624,8 @@
 
             <div class="space24"></div>
             <div class="hadding1">
-              <p class="font-f-3">"Just Abroad truly changed my life. I would recommend Just Abroad to anyone looking to study abroad, they will be true stepping stone in your academic journey."</p>
+              <p class="font-f-3">"Just Abroad truly changed my life. I would recommend Just Abroad to anyone looking to
+                study abroad, they will be true stepping stone in your academic journey."</p>
               <div class="space30"></div>
               <div class="testimonial1-bottom">
                 <div class="testimonial1-img img50">
@@ -1391,19 +1660,30 @@
             <div class="hadding1">
               <h1 class="font-f-3">Contact Us</h1>
             </div>
-            <form action="#" class="font-f-3">
-              <div class="contact3-form">
-                <div class="contact-from-input">
-                  <input type="text" placeholder="Your Name">
-                  <input type="number" placeholder="Your Phone ">
-                </div>
-                <div class="contact-from-input contact-from-input2">
-                  <input type="text" placeholder="Your Email">
-                </div>
-                <div class="contact-from-input">
+            <form action="#">
+              <div class="hero7-form">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="hero7-forrm-inputs">
+                      <input type="text" placeholder="Your Name *" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="hero7-forrm-inputs">
+                      <input type="email" placeholder="Your Email *" required>
+                    </div>
+                  </div>
                   <div class="col-lg-12">
                     <div class="hero7-forrm-inputs">
-                      <select name="state_id" id="stateId" aria-label="State ID" class=" wide her07" onchange="GetChildByMachineKey(this.value,'cityId');" data-label="Select State *" data-none-selected-text="Select State">
+                      <input type="tel" minlength="10" maxlength="10" pattern="^\d{10}$" placeholder="Phone* (10-Digit)"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="hero7-forrm-inputs">
+                      <select name="state_id" id="stateIdBottom" aria-label="State ID" class="wide her07"
+                        onchange="GetChildByMachineKey(this.value, 'cityIdBottom');" data-label="Select State *"
+                        data-none-selected-text="Select State">
                         <option value="" selected>Select State *</option>
                         <option value="26909">Andaman and Nicobar</option>
                         <option value="26920">Andhra Pradesh</option>
@@ -1442,17 +1722,24 @@
                         <option value="32784">Uttar Pradesh</option>
                         <option value="33411">Uttarakhand</option>
                         <option value="33506">West Bengal</option>
+                        <!-- Other states -->
                       </select>
                     </div>
                   </div>
+
+                  <div class="col-lg-12">
+                    <div class="hero7-forrm-inputs">
+                      <select name="city_id" id="cityIdBottom" aria-label="City ID" class="wide her07"
+                        data-label="Select City *" data-none-selected-text="Select City" required disabled>
+                        <option value="" selected>Select City *</option>
+                      </select>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="contact-from-input">
-                  <textarea cols="30" rows="3" placeholder="Additional Details"></textarea>
-                </div>
-                <div class="space20"></div>
-                <div>
-                  <button style="border: none;" class="theme-btn18 font-f-3">Send</button>
-                </div>
+                <div class="space24"></div>
+
+                <button type="submit" class="theme-btn15"><span>Apply Now</span></button>
               </div>
             </form>
 
@@ -1575,11 +1862,11 @@
             </h3>
             <div>
               <ul>
-                <li><a href="about.html"><span><i class="fa-solid fa-plane"></i></span> About</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> About</a></li>
                 <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Meet Expert</a></li>
-                <li><a href="blog.html"><span><i class="fa-solid fa-plane"></i></span> Blog</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Blog</a></li>
                 <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Countries</a></li>
-                <li><a href="contact.html"><span><i class="fa-solid fa-plane"></i></span> Contact</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Contact</a></li>
               </ul>
             </div>
           </div>
@@ -1602,9 +1889,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 hadding2">
           <div class="single-footer-contact single-footer single-footer2">
-            <h3>
-              Get in touch
-            </h3>
+            <h3>Get in touch</h3>
             <!-- <div class="padding-left20">
                         <div class="hadding1">
                         <p style="color: #181A1C;">2025 Rockledge Dr #130 Rockledge, United States</p>
@@ -1636,7 +1921,7 @@
     <div class="row align-items-center copyright2">
       <div class="col-lg-12 text-center hadding1">
         <p>
-          © 2025 Just Abroad All Rights Reserved.
+          © 2024 Just Abroad. All Rights Reserved.
         </p>
       </div>
     </div>
