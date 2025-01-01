@@ -169,7 +169,7 @@ p.icon-wrapper i {
     color: #000000;
 }
 .countries8-box-hadding.countries9-box-hadding {
-    min-height: 285px;
+    min-height: 360px;
 }
 .service5-box:hover {
     background-color: #900609;
@@ -220,10 +220,14 @@ p.visa-study {
 .contact-from-input textarea {
     margin-left: 0;
 }
+.choose2-text-box3.choose2-text-box9,
+.choose2-text-box4.choose2-text-box9 {
+    padding: 20px 40px 20px;
+}
 
 @media only screen and (max-width: 1920px) {
     .countries8-box-hadding.countries9-box-hadding {
-        min-height: 310px;
+        min-height: 340px;
     }
     .content-wrapper h4 {
         font-size: 1.4rem;
@@ -232,7 +236,7 @@ p.visa-study {
 
 @media only screen and (max-width: 1399px) {
     .countries8-box-hadding.countries9-box-hadding {
-        min-height: 330px;
+        min-height: 340px;
     }
     .content-wrapper h4 {
         font-size: 1.2rem;
