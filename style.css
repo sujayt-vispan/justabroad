@@ -152,7 +152,7 @@ Location:
     width: 50%;
 }
 .countries8-box-hadding.countries9-box-hadding {
-    background: #ffffff;
+    background: #900609;
     border: 2px solid #900609; 
     display: flex;
     justify-content: center;
@@ -166,7 +166,7 @@ p.icon-wrapper i {
     color: #900609;
 }
 .hadding8-w p {
-    color: #000000;
+    color: #ffffff;
 }
 .countries8-box-hadding.countries9-box-hadding {
     min-height: 360px;
@@ -231,6 +231,7 @@ p.visa-study {
     }
     .content-wrapper h4 {
         font-size: 1.4rem;
+        color: #ffffff;
     }
 }
 
