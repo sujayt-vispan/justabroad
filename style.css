@@ -224,6 +224,9 @@ p.visa-study {
 .choose2-text-box4.choose2-text-box9 {
     padding: 20px 40px 20px;
 }
+.choose2-main-image {
+    border-radius: 0; 
+}
 
 @media only screen and (max-width: 1920px) {
     .countries8-box-hadding.countries9-box-hadding {
